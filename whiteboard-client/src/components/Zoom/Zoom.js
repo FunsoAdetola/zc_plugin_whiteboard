@@ -16,10 +16,10 @@ export default function Zoom() {
   };
   return (
     <div className="zoom">
+      <div className="Invisible" onClick={hideZoomComponent}></div>
       <div
         className="zoom-component-after"
         style={{ display: isZoom ? "flex" : "none" }}
-        onPointerLeave={hideZoomComponent}
       >
         <div className="zoom-percentage">
           <span className="number">{zoomNumber}</span>%
